@@ -1,8 +1,8 @@
-
 body{
-    color: rgb(255, 255, 255);
+    color: rgb(218, 218, 218);
     background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
 }
 nav ul {
     list-style-type: none;
@@ -32,7 +32,7 @@ nav ul {
     text-align: justify;
   }
 a{
-    color:rgb(255, 255, 255);
+    color:rgb(235, 230, 230);
     text-decoration: none;
     text-align: justify;
 }
@@ -45,7 +45,7 @@ a{
 }
 h1{
   text-align: center; 
-  color: rgb(146, 12, 7);
+  color: rgb(196, 72, 67);
 }
 p{
   text-align: justify;
