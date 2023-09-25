@@ -1,72 +1,191 @@
-header{
-  width:100; 
-  padding: 20px; 
-  height:100px; 
+header {
+  width: 100%;
+  padding: 20px;
+  height: 100px;
   background-color: #1a1919ce;
   color: rgb(255, 255, 255);
   border-style: solid;
-  border-color:rgb(99, 99, 99);
-  
+  border-color: rgb(99, 99, 99);
 }
 
-body{
-    color: rgb(218, 218, 218);
-    background-color: rgb(49, 48, 48);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
+body {
+  color: rgb(218, 218, 218);
+  background-color: rgb(49, 48, 48);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
 }
+
 nav ul {
-    list-style-type: none;
-    background-color: #1a1919ce;
-    padding: 10px;
-    text-align: justify;
-  }
-  
-  nav ul li {
-    display: inline;
-    text-align: center;
-  }
-  .container{
-    display: flex;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    padding: 10px;
-    color: #c4c4c4;
-    text-align: justify;
-  }
-  
-  nav ul li a:hover {
-    background-color: #000000;
-    color: #fff;
-    text-align: justify;
-  }
-a{
-    color:rgb(235, 230, 230);
-    text-decoration: none;
-    text-align: justify;
-    
+  list-style-type: none;
+  background-color: #1a1919ce;
+  padding: 10px;
+  text-align: justify;
 }
 
-.center{
-    text-align: center;
+nav ul li {
+  display: inline;
+  text-align: center;
 }
-.right{
-   text-align: right;
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: #c4c4c4;
+  text-align: justify;
 }
-h1{
-  text-align: center; 
+
+nav ul li a:hover {
+  background-color: #000000;
+  color: #fff;
+  text-align: justify;
+}
+
+a {
+  color: rgb(235, 230, 230);
+  text-decoration: none;
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+h1 {
+  text-align: center;
   color: rgb(196, 72, 67);
 }
-p{
+
+p {
   text-align: justify;
- 
 }
-ul{
+
+ul {
   list-style: none;
   padding: 1px;
 }
-h3{
-  color:rgb(81, 81, 173);
+
+h3 {
+  color: rgb(81, 81, 173);
 }
+
+/* Estilos para telas menores (dispositivos móveis) */
+@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 10px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+.container {
+  position: relative;
+  width: 100%;
+
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; 
+}
+.column {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  float: left;
+  box-sizing: border-box; 
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: 90%;
+    padding: 0; }
+  .column {
+    margin-left: 4%; }
+  .column:first-child {
+    margin-left: 0; }
+
+  .full-width.column              { width: 100%; margin-left: 0; }  
+
+  .one-half.column                { width: 48%; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-quarter.column             { width: 22%; }
+  .two-quarter.column             { width: 48%; }
+  .three-quarter.column           { width: 74%; }
+
+  .one-half.column                { width: 48%; }
+
+            
+
+}
+
+.container:after,
+.row:after,
+.clearfix {
+  content: "";
+  display: table;
+  clear: both; }
+
+.center {
+    text-align: center;
+  }
+  
+.questions_box {
+    background-color: #ffffff;
+    padding: 60px;
+    text-align: left;
+    max-width: 960px;
+  }
+  
+.button {
+    font-family: 'Barclaycard Co Lt',Tahoma,sans-serif;
+    margin: 10px 0 0 0;
+    float: right;
+    cursor: pointer;
+  
+    font-size: 1em;
+    border: none;
+    padding: 10px 15px;
+    line-height: 18px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    vertical-align: baseline;
+    background: #075da8;
+    color: white;
+    text-decoration: none !important;
+    display: inline-block;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-transition: background-color 200ms ease-in-out;
+    -moz-transition: background-color 200ms ease-in-out;
+    -o-transition: background-color 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out;
+  }
+  
+.button:hover {
+    background-color: #059fdb !important;
+    color: white;
+  }
+  
+#question-2, #question-3, #question-4, #question-5, #question-6{
+    display: none;
+  }
+  
+#progress_bar {
+    background-color: #018fd0;
+    width: 20%;
+    height: 10px;
+    transition: all 100ms ease-in-out;
+  }
